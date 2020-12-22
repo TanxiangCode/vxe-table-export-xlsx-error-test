@@ -1,0 +1,47 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "moduleResolution": "node",
+    "noImplicitAny": true,
+    "target": "esnext",
+    "baseUrl": "",
+    "module": "esnext",
+    "jsx": "preserve",
+    "jsxFactory": "VueTsxSupport",
+    "importHelpers": true,
+    "experimentalDecorators": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "sourceMap": true,
+    "types": [
+      "node",
+      "jest",
+      "webpack-env"
+    ],
+    "paths": {
+      "@/*": [
+        "src/*"
+      ]
+    },
+    "lib": [
+      "esnext",
+      "dom",
+      "dom.iterable",
+      "ScriptHost",
+      "ES2020",
+      "ES2020.Promise"
+    ]
+  },
+  "include": [
+    "node_modules/vue-tsx-support/enable-check.d.ts",
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue",
+    "tests/**/*.ts",
+    "tests/**/*.tsx"
+  ],
+  "exclude": [
+    "node_modules/vxe-table-plugin-export-xlsx/*.ts",
+  ]
+}

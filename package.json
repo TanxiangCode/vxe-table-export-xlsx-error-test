@@ -1,0 +1,64 @@
+{
+  "name": "landsas",
+  "version": "3.0.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "lintfix": "vue-cli-service lint --fix"
+  },
+  "dependencies": {
+    "core-js": "^3.8.1",
+    "reflect-metadata": "^0.1.13",
+    "vue": "^2.6.11",
+    "vue-class-component": "^7.2.3",
+    "vue-element-resize-detector": "^1.0.6",
+    "vue-property-decorator": "^9.1.2",
+    "vxe-table": "^3.0.11",
+    "vxe-table-plugin-export-xlsx": "^2.0.8",
+    "xe-utils": "^3.0.4",
+    "xlsx": "^0.16.8"
+  },
+  "devDependencies": {
+    "@types/compression-webpack-plugin": "^6.0.1",
+    "@typescript-eslint/eslint-plugin": "^2.33.0",
+    "@typescript-eslint/parser": "^2.33.0",
+    "@vue/babel-preset-jsx": "^1.2.4",
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-eslint": "^4.5.8",
+    "@vue/cli-plugin-router": "~4.5.0",
+    "@vue/cli-plugin-typescript": "~4.5.0",
+    "@vue/cli-plugin-vuex": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "@vue/eslint-config-prettier": "^6.0.0",
+    "@vue/eslint-config-typescript": "^5.0.2",
+    "babel-eslint": "^10.1.0",
+    "babel-plugin-component": "^1.1.1",
+    "compression-webpack-plugin": "^6.0.5",
+    "eslint": "^6.7.2",
+    "eslint-plugin-vue": "^6.2.2",
+    "html-webpack-plugin": "^4.5.0",
+    "lint-staged": "^9.5.0",
+    "node-sass": "^4.12.0",
+    "sass-loader": "^7.1.0",
+    "sass-resources-loader": "^2.1.1",
+    "typescript": "^4.0.5",
+    "vue-cli-plugin-axios": "0.0.4",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ],
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,jsx,vue,ts,tsx}": [
+      "vue-cli-service lint",
+      "git add"
+    ]
+  }
+}
